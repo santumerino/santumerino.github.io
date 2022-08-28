@@ -22,10 +22,10 @@
 ##############################################################################
 # Set Variables
 
-$guestbookurl = "http://your.host.com/~yourname/guestbook.html";
-$guestbookreal = "/home/yourname/public_html/guestbook.html";
-$guestlog = "/home/yourname/public_html/guestlog.html";
-$cgiurl = "http://your.host.com/cgi-bin/guestbook.pl";
+$guestbookurl = "https://santumerino.github.io/guestb.htm";
+$guestbookreal = "C:\Users\Sant\Documents\GitHub\santumerino.github.io\guestb.htm";
+$guestlog = "C:\Users\Sant\Documents\GitHub\santumerino.github.io\guestbook\guestlog.html;
+$cgiurl = "https://santumerino.github.io/cgi-bin/guestbook.pl";
 $date_command = "/usr/bin/date";
 
 # Set Your Options:
@@ -37,7 +37,7 @@ $redirection = 0;       # 1 = Yes; 0 = No
 $entry_order = 1;       # 1 = Newest entries added first;
                         # 0 = Newest Entries added last.
 $remote_mail = 0;       # 1 = Yes; 0 = No
-$allow_html = 1;        # 1 = Yes; 0 = No
+$allow_html = 0;        # 1 = Yes; 0 = No
 $line_breaks = 0;	# 1 = Yes; 0 = No
 
 # If you answered 1 to $mail or $remote_mail you will need to fill out 
