@@ -1,7 +1,11 @@
 ---
 published: false
 ---
-# GETTING STARTED
+Hello! This is the big YARG postmortem! It's a very ramble-y blog post where I just dump all of my thoughts, past and future, into a big mass of text. Feel free to skim it and skip to the bits you think you'll find more interesting.
+
+But first, some history.
+
+# SOME HISTORY
 ## The beginning
 
 I first came up with the idea of YARG [back in 2019.](https://twitter.com/santumerino/status/1151867300519264257) 
@@ -51,3 +55,12 @@ That was very promising, but I had to make sure I would actually see this projec
 1. I’d set a deadline for myself. Sometime in mid-late 2022, actual release date TBD. _This one I actually kept!_
 
 Now that I had these totally unbreakable rules in place, it was time to actually make the dang game! How hard could _that_ be?
+
+# ACTUALLY MAKING THE DANG GAME
+## The story
+
+First things first, the original story had to go. I thought it would be fun to, instead of playing the whole "evil AI" trope straight, to play around with it.
+
+## The name
+
+I kept the name "Yet Another Rage Game" and I regret it to this day.
