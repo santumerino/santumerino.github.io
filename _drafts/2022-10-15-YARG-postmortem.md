@@ -1,11 +1,13 @@
 ---
-published: false
+published: true
 ---
 Hello! This is the big YARG postmortem! It's a very ramble-y blog post where I just dump all of my thoughts, past and future, into a big mass of text. Feel free to skim it and skip to the bits you think you'll find more interesting.
 
 But first, some history.
 
 # SOME HISTORY
+> "I got a feeling there's too much at stake / Down and out again, on a brand new day"
+> _- [Room to Breathe](https://youtu.be/JhUF4Beb9Y4), from Room to Breathe_
 ## The beginning
 
 I first came up with the idea of YARG [back in 2019.](https://twitter.com/santumerino/status/1151867300519264257) 
