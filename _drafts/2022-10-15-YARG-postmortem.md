@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 Hello! This is the big YARG postmortem! It's a very ramble-y blog post where I just dump all of my thoughts, past and future, into a big mass of text. Feel free to skim it and skip to the bits you think you'll find more interesting.
 
