@@ -5,6 +5,8 @@ Hello! This is the big YARG postmortem! It's a very ramble-y blog post where I j
 
 But first, some history.
 
+---
+
 # SOME HISTORY
 > "I got a feeling there's too much at stake / Down and out again, on a brand new day"
 
@@ -99,6 +101,8 @@ The level editor is the reason why the game came out in the first place (I spoke
 ## The name
 
 I kept the name "Yet Another Rage Game" and I regret it every day.
+
+---
 
 # LAUNCH DAY (AND WEEK AND MONTH)
 
