@@ -10,7 +10,7 @@ But first, some history.
 # SOME HISTORY
 > "I got a feeling there's too much at stake / Down and out again, on a brand new day"
 
-> _- [Room to Breathe](https://youtu.be/JhUF4Beb9Y4)_, from Room to Breathe
+> - [_Room to Breathe_](https://youtu.be/JhUF4Beb9Y4), from Room to Breathe
 ## The beginning
 
 I first came up with the idea of YARG [back in 2019.](https://twitter.com/santumerino/status/1151867300519264257) 
@@ -66,7 +66,7 @@ Now that I had these totally unbreakable rules in place, it was time to actually
 # ACTUALLY MAKING THE DANG GAME
 > "Just do what you want to / But more"
 
-> _- [Birthday 31](https://youtu.be/U32QYfNuRDQ)_, by Yotam Perel
+> - [_Birthday 31_](https://youtu.be/U32QYfNuRDQ), by Yotam Perel
 ## The story
 
 First things first, the original story had to go. I thought it would be fun to, instead of playing the whole "evil AI" trope straight, to play around with it.
