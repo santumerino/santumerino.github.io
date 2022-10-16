@@ -61,6 +61,8 @@ That was very promising, but I had to make sure I would actually see this projec
 
 Now that I had these totally unbreakable rules in place, it was time to actually make the dang game! How hard could _that_ be?
 
+---
+
 # ACTUALLY MAKING THE DANG GAME
 > "Just do what you want to / But more"
 
