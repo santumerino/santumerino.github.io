@@ -8,7 +8,7 @@ But first, some history.
 # SOME HISTORY
 > "I got a feeling there's too much at stake / Down and out again, on a brand new day"
 
-> _- [Room to Breathe](https://youtu.be/JhUF4Beb9Y4), from Room to Breathe_
+> _- [Room to Breathe](https://youtu.be/JhUF4Beb9Y4)_, from Room to Breathe
 ## The beginning
 
 I first came up with the idea of YARG [back in 2019.](https://twitter.com/santumerino/status/1151867300519264257) 
@@ -62,7 +62,7 @@ Now that I had these totally unbreakable rules in place, it was time to actually
 # ACTUALLY MAKING THE DANG GAME
 > "Just do what you want to / But more"
 
-> _- [Birthday 31](https://youtu.be/U32QYfNuRDQ), by Yotam Perel_
+> _- [Birthday 31](https://youtu.be/U32QYfNuRDQ)_, by Yotam Perel
 ## The story
 
 First things first, the original story had to go. I thought it would be fun to, instead of playing the whole "evil AI" trope straight, to play around with it.
@@ -99,3 +99,39 @@ The level editor is the reason why the game came out in the first place (I spoke
 ## The name
 
 I kept the name "Yet Another Rage Game" and I regret it every day.
+
+# LAUNCH DAY (AND WEEK AND MONTH)
+
+## What everyone wants to know
+
+How much money did I make?
+
+Well, I don’t think I’m allowed to say how much money I made on Steam. But if I add what I sold on Itch.io and round it up a bit, I should hopefully stay out of trouble.
+
+So, as of today, the 15th of October 2022, YARG made...
+
+:drum: :drum: :drum:
+
+...about $50 before tax.
+
+That... doesn’t sound great. But if you remember what I said X paragraphs ago, you’ll know it doesn’t matter! My measure of success was just getting the game out there. The money’s just nice to have.
+
+But there are some reasons why YARG wasn’t _economically_ successful.
+
+## Marketing
+
+There was none.
+
+I made a lot of Twitter posts talking about the development of the game. Mainly talking about milestones (showing images and video where possible!). But, of course, the people who search the #gamedev tag on Twitter are usually gamedevs themselves.
+
+If the idea was to get people to buy the game (which, again, it wasn’t!), then it seems obvious that they should know about the game first. That’s the reason marketing’s so important.
+
+Even then, I still somehow managed to get some wishlists!
+
+## Wishlists
+
+From what I’ve read, usually a developer can expect the number of wishlists for their game to go down on release, as people buy the game.
+
+I went in with a modest 181 wishlists (to be clear I treasure each and every one of them, thank you). I released the game, woke up the next day, checked my PC and it had... gone up to 188? And now it’s at over 220??
+
+It seems very weird, but I think it makes sense. If I had to guess, Steam’s algorithm pushed the game to a lot of people on launch day, and some amount of them found it interesting enough to wishlist, but not interesting enough to buy right then and there. I guess we’ll see what happens when a sale pops up!
