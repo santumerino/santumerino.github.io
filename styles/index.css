@@ -1,0 +1,505 @@
+/* The basics. Where it all starts... */
+:root {
+	--blue: #212dd8;
+	--orange: #ff5a00;
+	--yellow: #f7c511;
+	--lightgrey: #404973;
+	--black: #14182e;
+	--scrollbar-width: calc(100vw - 100%);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	background: var(--black);
+	text-align: center;
+
+}
+section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 200px;
+	padding: 64px 2rem;
+	z-index: 2;
+}
+section h1 {
+ text-align: center;
+}
+footer {
+	color: var(--lightgrey);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 20vw;
+	z-index: 998;
+	text-align: center;
+}
+
+/* Social media links */
+.socmed {
+	font-size: clamp(14px, 20px, 1vw);
+	color: var(--lightgrey);
+	display: flex;
+	align-items: center;
+}
+
+/* Logo size */
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+/* Colours!*/
+.blue {
+	background: var(--blue);
+}
+.orange {
+	background: var(--orange);
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+.yellow {
+	background: var(--yellow);
+}
+.lightgrey {
+	background: var(--lightgrey);
+}
+.black {
+	background: var(--black);
+}
+
+/* Skip to content. Shoutouts to this video: https://youtu.be/jDDaOFr9nqQ */
+.skipnav {
+	position: fixed;
+	left: 1rem;
+	top: 1rem;
+	padding: 0.45rem 0.6rem;
+	border-radius: 0.25rem;
+	transform: translateY(-300%);
+	background: white;
+	font-weight: bold;
+	color: var(--black);
+	transition: transform 125ms linear;
+	z-index: 9999;
+}
+.skipnav:focus {
+	transform: translateY(0);
+}
+a.skipnav:link, a.skipnav:visited {
+	color: var(--black);
+}
+
+/* Navigation bar! Shoutouts to this video: https://youtu.be/biOMz4puGt8 */
+.navbar {
+	top: -32px;
+	width: calc(100vw - var(--scrollbar-width));
+	height: 50px;
+	position: fixed;
+	background-image: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.85));
+	z-index: 1000;
+	transition: 200ms ease;
+}
+.navbar-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.nav-item {
+	width: 75%;
+	text-align: center;
+}
+.nav-link {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	height: 30px;
+	color: white;
+	background:  rgba(64,73,115,0.25);
+	text-decoration: none;
+	filter: opacity(0.95);
+	margin-left: 0.18rem;
+	margin-right: 0.18rem;
+	border-radius: 0 0 0.75rem 0.75rem;
+	transition: 200ms;
+}
+.navbar:hover, .navbar:has(.nav-link:focus) {
+	top: 0;
+}
+.nav-link:hover, .nav-link:focus {
+	filter: opacity(1);
+	background: rgba(64,73,115,0.5);
+	color: var(--orange);
+}
+.link-text {
+	margin: 0 auto;
+	font-size: clamp(0.5rem, 0.9rem, 1rem);
+}
+.downarrow {
+	display: flex;
+	justify-content: center;
+	padding-top: 4px;
+	filter: opacity(0.75);
+}
+
+/* Movin' some of the tabs a lil bit more */
+.nav-link:has(.fa-house-chimney) {
+	margin-left: 0.36rem;
+}
+.nav-link:has(.fa-comment-dots) {
+	margin-right: 0.36rem;
+}
+
+/* Navbar responsiveness */
+@media (hover: none) {
+	.navbar {
+		top: 0;
+		height: 32px;
+	}
+	.nav-link {
+		height: 28px;
+	}
+	.downarrow {
+		display: none;
+	}
+}
+@media (max-width: 465px) {
+	.link-text i {
+		display: none;
+	}
+}
+
+/* Ooh, waves! Shoutouts to this video: https://youtu.be/lPJVi797Uy0 */
+.spacer {
+		aspect-ratio: 960/240;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	z-index: 1;
+}
+.top {
+	background-image: url('./wave_top.svg');
+}
+.bottom {
+		background-image: url('./wave_bottom.svg');
+}
+
+/* Outline for text in orange BG, ooh la la */
+.orange p, .orange h1 {
+	text-shadow: var(--black) 0.05rem 0.05rem, var(--black) -0.05rem 0.05rem, var(--black) 0.05rem -0.05rem, var(--black) -0.05rem -0.05rem,
+	var(--black) 0.08rem 0.08rem, var(--black) -0.08rem 0.08rem, var(--black) 0.08rem -0.08rem, var(--black) -0.08rem -0.08rem,
+	var(--black) 0 0 10px, var(--black) 0 0 20px;
+}
+
+/* Link colours! */
+a:link, a:visited {
+	color: var(--lightgrey);
+	text-decoration: none;
+}
+a.brighter:link, a.brighter:visited {
+	color: var(--yellow);
+	text-decoration: none;
+}
+a.darker:link, a.darker:visited {
+	color: #92e8c0;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.nav-link:link, a.nav-link:visited {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+a:hover {
+	color: var(--orange);
+	text-decoration: underline;
+}
+a:active {
+	color: var(--orange);
+	text-decoration: none;
+}
+a.brighter:hover {
+	color: var(--orange);
+	text-decoration: underline;
+}
+a.brighter:active {
+	color: var(--orange);
+	text-decoration: none;
+}
+a.darker:hover {
+	color: var(--yellow);
+	text-decoration: underline;
+}
+a.darker:active {
+	color: var(--yellow);
+	text-decoration: none;
+}
+a.nav-link:hover, a.contrast:active {
+	color: var(--orange);
+	text-decoration: none;
+}
+
+/* Button */
+a.coolbutton:link, a.coolbutton:visited {
+	color: white;
+	background-color: var(--black);
+	padding: 0.32em 1em;
+  border-radius: 0.50em;
+	text-decoration: none;
+	transition: 0.15s ease;
+}
+a.coolbutton:hover, a.coolbutton:active {
+	background-color: var(--lightgrey);
+	font-size: 0.95rem;
+	box-shadow:
+1px 1px #c94b0a,
+2px 2px #c94b0a,
+3px 3px #c94b0a,
+4px 4px #c94b0a;
+}
+}
+
+/* Image grid! */
+.imag {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.imag img {
+	max-width: 100%;
+	height: auto;
+}
+@media (min-width:681px) {
+	.imgHolder {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+}
+@media (max-width:680px) {
+	.imgHolder {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+	}
+}
+
+/* Image animations and size */
+.imag img {
+	transition: 0.15s ease;
+  border-radius: 0.75em;
+}
+.imag img:hover{
+	-webkit-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	transform: scale(0.95);
+	transition: 0.25s ease;
+	box-shadow:
+1px 1px #c94b0a,
+2px 2px #c94b0a,
+3px 3px #c94b0a,
+4px 4px #c94b0a;
+}
+
+/* The fella! */
+.fella {
+	position: absolute;
+	width: 218px;
+	height: 173px;
+	bottom: 0px;
+	right: 5%;
+	background: url("../images/fellaIdle.png");
+	user-select: none;
+	z-index: 999;
+}
+.fella:hover {
+	background: url("../images/fellaWave.png");
+	cursor: default;
+}
+@media (max-width:767px) {
+	.fella {
+	display: none;
+	bottom: -200px;
+	}
+}
+
+/* Epic gradient. Shoutouts to this CodePen: https://codepen.io/shshaw/pen/YpERQQ */
+.linear-wipe {
+	--bg-size: 250%;
+	background: linear-gradient(
+								90deg,
+								var(--orange),
+								var(--blue),
+								var(--orange)
+							) 0 0 / var(--bg-size) 100%;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+/* A custom scrollbar?! What will the CSS people think of next?!?! */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-track {
+	background: var(--lightgrey);
+}
+::-webkit-scrollbar-thumb {
+	background: #686f99;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--orange);
+}
+/* Firefox, too. And fuck it, we're throwing the navbar in here too. */
+@supports (scrollbar-color: aquamarine fuchsia) {
+	* {
+		scrollbar-color: #686f99 var(--lightgrey);
+		scrollbar-width: thin;
+	}
+	.navbar {
+	top: 0;
+	height: 40px;
+	}
+	.nav-link {
+	height: 32px;
+	}
+	.downarrow {
+	display: none;
+	}
+ }
+}
+
+/* Nutshell stuff for pages that have it */
+.nutshell-bubble-from {
+	display: none;
+}
+.nutshell-bubble-overflow-embed-button {
+	display: none;
+	pointer-events: none;
+}
+.nutshell-heading-embed {
+	display: none;
+	pointer-events: none;
+}
+a.nutshell-expandable {
+	color: white;
+	text-decoration: none;
+}
+
+/* Horizontal image gallery! Shoutouts to this StackOverflow post: https://stackoverflow.com/questions/62092177/infinite-sideways-scroll-animation-of-images */
+.slideshow {
+  height: 180px;
+  margin: 0 auto;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.move {
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  display: flex;
+  animation: moveSlideshow 20s linear infinite;
+}
+
+.move > img {
+  height: 180px;
+  width: auto;
+}
+
+.slideshow:hover .move {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.slideshow, .move {
+	animation-play-state: paused;
+	}
+}
+
+@keyframes moveSlideshow {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+    /*The width of the page needs to be taken into consideration*/
+  }
+}
+
+.slideshow::before {
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    var(--black) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  width: 3%;
+  z-index: 2;
+  pointer-events: none;
+}
+.slideshow::after {
+  position: absolute;
+  background-image: linear-gradient(
+    to left,
+    var(--black) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  width: 5%;
+  z-index: 2;
+  pointer-events: none;
+  right: 0;
+}
+
+/* About page image. Shoutouts to https://css-tricks.com/how-do-you-make-a-layout-with-pictures-down-one-side-of-a-page-matched-up-with-paragraphs-on-the-other-side/ */
+#me {
+	display: grid;
+	padding: 2rem;
+	grid-template-columns: 325px 1fr;
+	align-items: center;
+	margin: 0 auto;
+}
+#me img {
+	max-width: 100%;
+	border-radius: 0.75em;
+	height: auto;
+}
+#me p {
+	text-align: left;
+	margin-right: 2rem;
+}
+#me figcaption {
+	font-size: 85%;
+}
+/* Make that shizz responsive while you're at it, yeah? */
+@media (max-width: 700px) {
+#me {
+    display: block;
+  }
+#me img {
+		max-width: 60%;
+		height: auto;
+	}
+#me p {
+  position: relative;
+	margin-right: 0rem;
+  }
+}

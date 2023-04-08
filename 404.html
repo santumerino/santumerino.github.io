@@ -1,21 +1,99 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-<meta http-equiv="Content-Language" content="es-ar">
-<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>404... :(</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>oops</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
-<meta name="Microsoft Border" content="b, default">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<style>
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	background: #14182e;
+
+}
+h1 {
+  font-size: clamp(3rem, 25vmin - 1rem, 16rem);
+}
+section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 20vw;
+	min-height: 200px;
+	z-index: 2;
+}
+
+.blue {
+	background: #212dd8;
+}
+.orange {
+	background: #ff5a00;
+}
+.lightgrey {
+	background: #404973;
+}
+.black {
+	background: #14182e;
+}
+
+.linear-wipe {
+  --bg-size: 400%;
+  --color-one: #ff5a00;
+  --color-two: #212dd8;
+  background: linear-gradient(
+                90deg,
+                var(--color-one),
+                var(--color-two),
+                var(--color-one)
+              ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move-bg 32s infinite linear;
+	position: relative;
+}
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
+
+
+a {
+}
+a:link {
+  color: #404973;
+  text-decoration: none;
+}
+a:visited {
+  color: #404973;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff5a00;
+  text-decoration: underline;
+}
+a:active {
+  color: #ff5a00;
+  text-decoration: none;
+}
+</style>
 </head>
 
-<body><!--msnavigation--><table dir="ltr" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
-
-<p><img border="0" src="404.GIF" width="407" height="384"></p>
-<p>You tried to access a page that doesn't exist.</p>
-<p>But that's OK, everyone makes mistakes.</p>
-<p><a href="https://www.santumerino.com">You can go back to the home page and try again.</a></p>
-
+<body>
+<section>
+<h1 class="linear-wipe">404... :(</h1>
+<p>This page doesn't exist... <a href="https://www.santumerino.com">Here's a link back to the home page, if you need it.</a></p>
+</section>
+</body>
 </html>

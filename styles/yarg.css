@@ -1,0 +1,166 @@
+/* The basics. Where it all starts... */
+:root {
+	--red: #e64539;
+	--orange: #f98b1a;
+	--yellow: #f7c511;
+	--lightgrey: #404973;
+	--black: black;
+	--scrollbar-width: calc(100vw - 100%);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-align: center;
+}
+section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 200px;
+	padding: 64px 2rem;
+	z-index: 2;
+}
+section h1 {
+ text-align: center;
+}
+footer {
+	color: var(--red);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 20vw;
+	z-index: 998;
+	text-align: center;
+}
+p {
+	text-shadow: var(--black) 0.05rem 0.05rem, var(--black) -0.05rem 0.05rem, var(--black) 0.05rem -0.05rem, var(--black) -0.05rem -0.05rem,
+	var(--black) 0.08rem 0.08rem, var(--black) -0.08rem 0.08rem, var(--black) 0.08rem -0.08rem, var(--black) -0.08rem -0.08rem,
+	var(--black) 0 0 10px, var(--black) 0 0 20px;
+}
+
+/* BG viddy! */
+#trailer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+	#trailer {
+	  display: none;
+	}
+}
+
+.maincontent {
+  position: fixed;
+  bottom: 0;
+}
+
+/* Logo size */
+.logo {
+	max-width: 100%;
+}
+
+/* Text :) */
+.focus {
+	color: #f98b1a;
+	font-weight: bold;
+	font-size: 115%;
+}
+.tiny {
+	font-size: 75%;
+}
+
+/* Widgets! */
+#widgets iframe, #widgets object, #widgets embed {
+max-width: 100%;
+}
+
+/* Skip to content. Shoutouts to this video: https://youtu.be/jDDaOFr9nqQ */
+.skipnav {
+	position: fixed;
+	left: 1rem;
+	top: 1rem;
+	padding: 0.45rem 0.6rem;
+	border-radius: 0.25rem;
+	transform: translateY(-300%);
+	background: white;
+	font-weight: bold;
+	color: var(--black);
+	transition: transform 125ms linear;
+	z-index: 9999;
+}
+.skipnav:focus {
+	transform: translateY(0);
+}
+a.skipnav:link, a.skipnav:visited {
+	color: var(--black);
+}
+
+/* Link colours! */
+a:link, a:visited {
+	color: var(--orange);
+	text-decoration: none;
+}
+a:hover {
+	color: var(--yellow);
+	text-decoration: underline;
+}
+a:active {
+	color: var(--yellow);
+	text-decoration: none;
+}
+
+/* Image grid! */
+.imgHolder {
+	display: grid;
+  gap: 1rem;
+  width: 75%;
+	justify-content: center;
+}
+.imgHolder img {
+	max-width: 100%;
+  border-radius: 0.75em;
+	box-shadow: var(--black) 0.05rem 0.05rem, var(--black) -0.05rem 0.05rem, var(--black) 0.05rem -0.05rem, var(--black) -0.05rem -0.05rem,
+	var(--black) 0.08rem 0.08rem, var(--black) -0.08rem 0.08rem, var(--black) 0.08rem -0.08rem, var(--black) -0.08rem -0.08rem,
+	var(--black) 0 0 10px, var(--black) 0 0 20px;
+}
+@media (min-width:681px) {
+	.imgHolder {
+		grid-template-columns: repeat(2, auto);
+	}
+}
+@media (max-width:680px) {
+	.imgHolder {
+		grid-template-columns: repeat(1, auto);
+	}
+}
+
+/* A custom scrollbar?! What will the CSS people think of next?!?! */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-track {
+	background: var(--lightgrey);
+}
+::-webkit-scrollbar-thumb {
+	background: #686f99;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--orange);
+}
+/* Firefox, too. */
+@supports (scrollbar-color: aquamarine fuchsia) {
+	* {
+		scrollbar-color: #686f99 var(--lightgrey);
+		scrollbar-width: thin;
+	}
+}
