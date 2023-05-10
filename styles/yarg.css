@@ -121,7 +121,7 @@ a:active {
 /* Image grid! */
 .imgHolder {
 	display: grid;
-  gap: 1rem;
+  gap: 1em;
   width: 75%;
 	justify-content: center;
 }
@@ -163,4 +163,21 @@ a:active {
 		scrollbar-color: #686f99 var(--lightgrey);
 		scrollbar-width: thin;
 	}
+}
+
+/* Button */
+a.coolbutton:link, a.coolbutton:visited {
+	color: var(--black);
+	background-color: var(--orange);
+	padding: 0.32em 1em;
+  border-radius: 0.50em;
+	text-decoration: none;
+	transition: 0.15s ease;
+	margin-top: 1em;
+}
+a.coolbutton:hover, a.coolbutton:active {
+	color: white;
+	background-color: var(--lightgrey);
+	font-size: 0.95rem;
+}
 }
