@@ -78,6 +78,18 @@ p {
 	font-size: 75%;
 }
 
+/* Announcements?! */
+.announcements {
+		position: relative;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		color: white;
+		text-align: center;
+		padding: 10px 0;
+user-select: none;
+z-index: 999;
+}
+
 /* Widgets! */
 #widgets iframe, #widgets object, #widgets embed {
 max-width: 100%;
