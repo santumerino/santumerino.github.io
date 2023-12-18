@@ -489,6 +489,7 @@ a.nutshell-expandable {
 #me figcaption {
 	color: var(--lightgrey);
 	font-size: 90%;
+	user-select: text;
 }
 /* Make that shizz responsive while you're at it, yeah? */
 @media (max-width: 700px) {
@@ -496,11 +497,14 @@ a.nutshell-expandable {
     display: block;
   }
 #me img {
-		max-width: 60%;
 		height: auto;
 	}
 #me p {
   position: relative;
 	margin-right: 0rem;
   }
+#me figcaption {
+	color: var(--black);
+	user-select: none;
+}
 }
