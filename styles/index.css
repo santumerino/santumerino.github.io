@@ -197,9 +197,10 @@ a.skipnav:link, a.skipnav:visited {
 
 /* Outline for text in orange BG, ooh la la */
 .orange p, .orange h1 {
-	text-shadow: var(--black) 0.05rem 0.05rem, var(--black) -0.05rem 0.05rem, var(--black) 0.05rem -0.05rem, var(--black) -0.05rem -0.05rem,
-	var(--black) 0.08rem 0.08rem, var(--black) -0.08rem 0.08rem, var(--black) 0.08rem -0.08rem, var(--black) -0.08rem -0.08rem,
-	var(--black) 0 0 10px, var(--black) 0 0 20px;
+	padding: 0.7rem 1.5rem;
+	border-radius: 0.25rem;
+	background-color: var(--black);
+	text-shadow: 1px 1px var(--lightgrey), 2px 2px var(--lightgrey), 3px 3px var(--lightgrey), 4px 4px var(--lightgrey);
 }
 
 /* Link colours! */
