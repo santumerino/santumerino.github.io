@@ -28,7 +28,7 @@ section {
 	z-index: 2;
 }
 section h1 {
- text-align: center;
+	text-align: center;
 }
 footer {
 	color: var(--lightgrey);
@@ -40,7 +40,9 @@ footer {
 	z-index: 998;
 	text-align: center;
 }
-
+hr {
+	background: var(--lightgrey);
+}
 /* Social media links */
 .socmed {
 	font-size: clamp(14px, 20px, 1vw);
