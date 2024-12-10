@@ -154,7 +154,7 @@ a:active {
 	width: 75%;
 	justify-content: center;
 }
-.imgHolder img {
+.imgHolder img, .imgHolder lite-youtube {
 	max-width: 100%;
 	border-radius: 0.75em;
 	box-shadow: var(--black) 0.05rem 0.05rem, var(--black) -0.05rem 0.05rem, var(--black) 0.05rem -0.05rem, var(--black) -0.05rem -0.05rem,
