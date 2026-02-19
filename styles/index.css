@@ -301,7 +301,7 @@ a.coolbutton:hover, a.coolbutton:active {
 /* Image animations and size */
 .imag img {
 	transition: 0.15s ease;
-  border-radius: 0.75em;
+	border-radius: 0.75em;
 }
 .imag img:hover{
 	-webkit-transform: scale(0.95);
