@@ -1,0 +1,65 @@
+html {
+    color: white;
+
+    font: 80%/1.6 ui-monospace;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    color: white;
+    background: #14182e;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-moz-selection {
+    background: #ff5a00;
+}
+
+::selection {
+    background: #ff5a00;
+}
+
+a:link, a:visited {
+    color: #ff5a00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #70acc7;
+    text-decoration: thin dotted;
+}
+
+a.button-secondary {
+    color: black;
+}
+
+.button {
+    background-color: #ff5a00;
+}
+.button-secondary {
+    background-color: #f7c511;
+}
+.button-secondary:hover {
+    background-color: #404973;
+}
+
+.nav__item:hover {
+    background: #404973;
+}
+
+.gallery__item {
+    color: black;
+}
