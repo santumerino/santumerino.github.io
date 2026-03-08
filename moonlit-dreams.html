@@ -5,35 +5,179 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moonlit Dreams page under construction!</title>
+
+<!-- Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+<!-- Primary Meta Tags -->
+<title>Moonlit Dreams</title>
+<meta name="title" content="Moonlit Dreams">
+<meta name="description" content="A transdimensional block-pushing puzzle game, in your dreams.">
+
+<link rel="icon" type="image/x-icon" href="./games/moonlit-dreams/icon.png">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.santumerino.com/moonlit-dreams">
+<meta property="og:title" content="Moonlit Dreams">
+<meta property="og:description" content="A transdimensional block-pushing puzzle game, in your dreams.">
+<meta property="og:image" content="https://www.santumerino.com/images/cardMDreams.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.santumerino.com/moonlit-dreams">
+<meta property="twitter:title" content="Moonlit Dreams">
+<meta property="twitter:description" content="A transdimensional block-pushing puzzle game, in your dreams.">
+<meta property="twitter:image" content="https://www.santumerino.com/images/cardMDreams.png">
+
+
+<link rel="stylesheet" href="styles/index.css"/>
+<link rel="stylesheet" href="styles/lite-yt-embed.min.css">
+<script src="js/lite-yt-embed.min.js"></script>
 
 <style>
+/* Disgusting hodgepodge between index.css, yarg.css and new stuff. I'm not making another .css file, this is easier :) */
 body {
-	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
 	font-family: 'Itim', sans-serif;
 	color: white;
-	background: black;
 
 }
-section {
-	position: relative;
+
+main {
 	display: flex;
-	flex-direction: column;
+	flex-grow: 1;
+	justify-content: center;
 	align-items: center;
-	padding: 0px 20vw;
-	min-height: 200px;
-	z-index: 2;
+	flex-direction: row;
+	gap: 20px;
+}
+
+@media (max-width: 1072px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+section {
+	width: 100%;
+	max-width: 600px;
+	padding: 20px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+section iframe,
+section lite-youtube {
+	max-width: 100%;
+	border: none;
+}
+
+footer {
+	width: 90%;
+	text-align: center;
+	padding: 20px;
+}
+
+lite-youtube {
+	display: block;
+	width: 100%;
+	border-radius: 1em;
+	aspect-ratio: 16 / 9;
+	position: relative;
+}
+
+/* Button */
+a.coolbutton:link, a.coolbutton:visited {
+	color: white;
+	background-color: #2bc0f4;
+	padding: 0.32em 1em;
+	border-radius: 0.50em;
+	font-size: 1.25rem;
+	text-decoration: none;
+	transition: 0.15s ease;
+}
+a.coolbutton:hover, a.coolbutton:active {
+	background-color: #0484d1;
+	font-size: 1.2rem;
+	box-shadow:
+1px 1px black,
+2px 2px black,
+3px 3px black,
+4px 4px black;
+}
+
+.youtube-bs {
+  font-size: 12px;
+  color: #888;
+  background-color: black;
+  margin-top: 6px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.youtube-bs a {
+  color: #777;
+  text-decoration: underline;
+}
+
+.youtube-bs a:hover {
+  color: #333;
+}
+
+/* BG viddy! */
+#trailer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+	#trailer {
+		display: none;
+	}
 }
 </style>
 </head>
 
-<body>
-<section>
-<h1><img src="./presskit/moonlit-dreams/images/character art/player_1.png"><br>Check back soon!</h1>
+<header>
+<!-- Skip to content -->
+<a href="#maincontent" class="skipnav">Skip to content</a>
+<!-- BG viddy -->
+<video autoplay muted loop id="trailer">
+	  <source src="images/MDreamsTrailer.mp4" type="video/mp4">
+</video>
+</header>
+
+<body background="./presskit/moonlit-dreams/images/steam assets/bg.png" bgcolor="#1A0000">
+<main>
+<section id="logo">
+<p><img border="0" src="./presskit/moonlit-dreams/images/logo.png" alt="Moonlit Dreams" class="logo"></a></p>
 </section>
+<section id="maincontent">
+<p class="coolbutton"><a class="coolbutton" href="https://store.steampowered.com/app/4482070/Moonlit_Dreams/">Steam</a></p>
+<p class="coolbutton"><a class="coolbutton" href="https://santumerino.itch.io/moonlit-dreams">Itch.io</a></p>
+<lite-youtube videoid="wF8rf0PrQdo" style="background-image: url('images/MDreamsTrailer.png');"></lite-youtube>
+<p class="youtube-bs">By playing this video, you agree to YouTube's <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
+<p class="coolbutton"><a class="coolbutton" href="https://www.santumerino.com/presskit/moonlit-dreams/">Presskit</a></p>
+</section>
+<section id="widgets">
+<iframe src="https://store.steampowered.com/widget/4482070/" frameborder="0" width="550" height="190"></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/4213591?bg_color=000000&amp;fg_color=ffffff&amp;link_color=2bc0f4&amp;border_color=333333" width="552" height="167"><a href="https://santumerino.itch.io/moonlit-dreams">Moonlit Dreams by Santum</a></iframe>
+</section>
+</main>
+
+<footer>
+<p>© <script>document.write(new Date().getFullYear())</script> <a href="https://www.santumerino.com/">Santum</a>
+<br><font size="1">This website is best viewed on a web browser.</font></p>
+</footer>
 </body>
 </html>
